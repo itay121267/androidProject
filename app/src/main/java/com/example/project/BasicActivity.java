@@ -49,8 +49,8 @@ public class BasicActivity extends AppCompatActivity {
             return;
         } else {
             uid = user.getUid();
-            userRef = FirebaseDatabase.getInstance("//").getReference("userActivities").child(uid);
-            storageReference = FirebaseStorage.getInstance("//").getReference();
+            userRef = FirebaseDatabase.getInstance("//").getReference("userActivities").child(uid); // ללא הלינק
+            storageReference = FirebaseStorage.getInstance("//").getReference(); // ללא הלינק
         }
 
     }
