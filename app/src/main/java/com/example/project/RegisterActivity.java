@@ -87,7 +87,7 @@ DatabaseReference databaseReference;
                                     Toast.makeText(RegisterActivity.this, "Successfully created user ", Toast.LENGTH_SHORT).show();
                                     Log.d("Register", "createUserWithEmail:success");
                                     FirebaseUser user = mAuth.getCurrentUser();
-                                    databaseReference = FirebaseDatabase.getInstance("https://tamaguchi-register-default-rtdb.europe-west1.firebasedatabase.app/").
+                                    databaseReference = FirebaseDatabase.getInstance("//").
                                             getReference("userActivities");
                                     databaseReference.child(user.getUid()).setValue(new UserData(0,0,0, 1, System.currentTimeMillis(),
                                             0, 0, 0, System.currentTimeMillis(),
