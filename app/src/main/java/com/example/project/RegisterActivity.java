@@ -88,7 +88,7 @@ DatabaseReference databaseReference;
                                     Log.d("Register", "createUserWithEmail:success");
                                     FirebaseUser user = mAuth.getCurrentUser();
                                     databaseReference = FirebaseDatabase.getInstance("//").
-                                            getReference("userActivities");
+                                            getReference("userActivities"); // ללא הלינק
                                     databaseReference.child(user.getUid()).setValue(new UserData(0,0,0, 1, System.currentTimeMillis(),
                                             0, 0, 0, System.currentTimeMillis(),
                                             0 ,0 , 100)); // יוצר עצם מאופס ושולח למסד הנתונים
