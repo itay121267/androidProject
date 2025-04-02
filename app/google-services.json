@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "848377874719",
+    "project_id": "tamaguchi-register",
+    "storage_bucket": "tamaguchi-register.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:848377874719:android:fa29330916280a0dcc882a",
+        "android_client_info": {
+          "package_name": "com.example.project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBi65FYToORYQjaEWeYCcoZFVX2jk8c1Bo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

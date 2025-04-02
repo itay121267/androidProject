@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    xmlns:tools="http://schemas.android.com/tools">
+    
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:id="@+id/buttonImage"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonName"
+        android:textColor="@color/red"
+        android:layout_toEndOf="@+id/buttonImage"
+        android:textSize="20sp"
+        tools:text="You gave your dog a bath" />
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/date"
+        android:layout_toEndOf="@id/buttonImage"
+        android:layout_below="@+id/buttonName"
+        android:textColor="@color/red"
+        tools:text="2025/10/2 15:30:20" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/input"
+        android:layout_toEndOf="@id/buttonImage"
+        android:layout_below="@+id/date"
+        android:textColor="@color/red"
+        tools:text="sponge" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/buttonImage"
+        android:layout_marginTop="20dp"
+        android:background="#E3D1D1"/>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerLayout"
+    tools:context=".StatisticsActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+    <include
+        layout="@layout/toolbar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progression"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:textSize="26sp"
+                android:fontFamily="sans-serif-black"
+                android:text="Progression"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/levelProg"
+                android:layout_below="@id/progression"
+                android:layout_marginTop="6dp"
+                android:textSize="18sp"
+                android:text="@string/progress_message"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="12dp"
+                android:id="@+id/progView"
+                android:layout_below="@id/levelProg"
+                android:background="@color/orange" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/activities"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:layout_below="@id/progView"
+                android:textSize="26sp"
+                android:fontFamily="sans-serif-black"
+                android:text="Dog Activities"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/activityProg"
+                android:layout_below="@id/activities"
+                android:layout_marginTop="6dp"
+                android:textSize="18sp"
+                android:text="@string/activity_message"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="12dp"
+                android:layout_below="@id/activityProg"
+                android:background="@color/orange"
+                android:id="@+id/activityView"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/account"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:layout_below="@id/activityView"
+                android:textSize="26sp"
+                android:fontFamily="sans-serif-black"
+                android:text="Account details"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/accountProg"
+                android:textSize="18sp"
+                android:layout_below="@id/account"
+                android:layout_marginTop="6dp"
+                android:text="@string/account_message"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="12dp"
+                android:layout_below="@id/accountProg"
+                android:background="@color/orange" />
+
+        </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:id="@+id/drawerContent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_gravity = "start">
+        <include
+            layout="@layout/nav_drawer" />
+    </LinearLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>
