@@ -49,8 +49,8 @@ public class BasicActivity extends AppCompatActivity {
             return;
         } else {
             uid = user.getUid();
-            userRef = FirebaseDatabase.getInstance("https://tamaguchi-register-default-rtdb.europe-west1.firebasedatabase.app/").getReference("userActivities").child(uid);
-            storageReference = FirebaseStorage.getInstance("gs://tamaguchi-register.firebasestorage.app").getReference();
+            userRef = FirebaseDatabase.getInstance("//").getReference("userActivities").child(uid);
+            storageReference = FirebaseStorage.getInstance("//").getReference();
         }
 
     }
