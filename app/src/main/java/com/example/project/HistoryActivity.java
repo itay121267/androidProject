@@ -135,7 +135,7 @@ public class HistoryActivity extends BasicActivity {
                     logs.add(new LogEntry(buttonName, formattedTimestamp, input));
                 }
                 Log.d("FirebaseLogs", "Fetched logs: " + logs.size());
-                applyFilters(); // Apply filters after fetching logs
+                applyFilters(); 
             }
 
             @Override
